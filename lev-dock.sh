@@ -15,7 +15,7 @@ systemctl enable docker
 
 docker pull docker.io/kalilinux/kali-linux-docker
 
-docker -run -i -t docker.io/kalilinux/kali-linux-docker /bin/bash
+docker run -i -t docker.io/kalilinux/kali-linux-docker /bin/bash
 
 id="$(docker ps | awk {'print $1'} | grep -v CON*)"
 
