@@ -1,6 +1,6 @@
 #!/bin/bash
 
-' :
+: '
 
 This script creates the Docker environment required for the Leviathan framework to work in Red Hat and CentOS variants.
 
