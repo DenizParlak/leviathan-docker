@@ -32,9 +32,10 @@ docker exec $id bash -c 'git clone https://github.com/leviathan-framework/leviat
 
 docker exec $id bash -c 'cd leviathan'
 
-docker exec $id bash -c 'pip install -r requirements.txt'
+docker exec $id bash -c 'bash scripts/debian_install.sh'
             ;;
         "Kali")
+        
 yum -y install docker docker-registry
 
 systemctl start docker
